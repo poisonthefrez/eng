@@ -16,8 +16,8 @@ body {
 }
 
 .card {
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
     perspective: 1000px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -95,9 +95,15 @@ body {
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
-    width: 100%;
     max-width: 250px;
-    margin-top: 5rem;
+
+    position: fixed;
+    /* фиксируем */
+    top: 20px;
+    /* отступ от низа */
+    left: 20px;
+    /* отступ справа */
+    z-index: 1000;
 }
 
 .btn2:hover {
@@ -105,14 +111,14 @@ body {
 }
 
 .dictionary {
-    margin-top: 20px;
+    margin-top: 50px;
     display: none;
     text-align: left;
     background: white;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -121,10 +127,12 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* два столбца */
+    gap: 10px 30px; /* отступы между строками и колонками */
 }
-
 .dictionary li {
-    padding: 8px 0;
+    padding: 5px 0;
     border-bottom: 1px solid #ddd;
 }
 
