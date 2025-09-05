@@ -10,6 +10,8 @@ body {
 }
 
 .container {
+    margin-top: 2rem;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +75,7 @@ body {
     color: white;
     gap: 50px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
 }
 
 .btn {
@@ -111,7 +114,8 @@ body {
 }
 
 .dictionary {
-    margin-top: 50px;
+    margin-top: auto;
+    width: 100%;
     display: none;
     text-align: left;
     background: white;
